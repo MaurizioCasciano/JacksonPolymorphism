@@ -10,6 +10,7 @@ import test.jackson.polymorphism.domain.interfaces.ImpactAssessment;
 @SuperBuilder
 @NoArgsConstructor
 public abstract class ImpactAssessmentModel implements ImpactAssessment {
+    @Setter(AccessLevel.NONE)
     protected ImpactAssessmentType type;
     protected Impact impact;
 }

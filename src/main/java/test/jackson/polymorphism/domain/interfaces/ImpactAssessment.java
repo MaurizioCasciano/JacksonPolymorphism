@@ -7,8 +7,6 @@ import test.jackson.polymorphism.domain.enumeration.ImpactAssessmentType;
 public interface ImpactAssessment {
     ImpactAssessmentType getType();
 
-    void setType(ImpactAssessmentType type);
-
     Impact getImpact();
 
     void setImpact(Impact impact);
