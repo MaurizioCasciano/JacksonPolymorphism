@@ -1,6 +1,5 @@
 package test.jackson.polymorphism.domain.models;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,11 +13,11 @@ import java.util.Currency;
 @Data
 @SuperBuilder
 @NoArgsConstructor
-@AllArgsConstructor
 public class QuantitativeImpactAssessmentModel extends ImpactAssessmentModel implements QuantitativeImpactAssessment {
 
-    @Builder.Default
-    private ImpactAssessmentType type = ImpactAssessmentType.QUANTITATIVE;
+    {
+        this.type = ImpactAssessmentType.QUANTITATIVE;
+    }
 
     /**
      * ISO 4217 currency code for this currency.
